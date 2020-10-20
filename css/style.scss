@@ -1,0 +1,258 @@
+                                a:hover {
+                                    text-decoration: none;
+                                }
+                                
+                                li {
+                                    list-style: none;
+                                }
+                                
+                                header {
+                                    .header-top {
+                                        font-size: .8em;
+                                        background: #f5f5f5;
+                                        color: #999999;
+                                        .top-left {
+                                            span {
+                                                padding: 15px;
+                                                border-left: 1px solid #dddddd;
+                                                line-height: 45px;
+                                                &:nth-child(3) {
+                                                    border-right: 1px solid #dddddd;
+                                                }
+                                            }
+                                        }
+                                        .top-right {
+                                            i {
+                                                padding: 15px;
+                                                border-right: 1px solid #dddddd;
+                                                &:nth-child(1) {
+                                                    border-left: 1px solid #dddddd;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .header-bottom {
+                                        .logo {
+                                            font-family: 'Open Sans', sans-serif;
+                                            color: #1E69B8;
+                                        }
+                                        .menu {
+                                            li {
+                                                a {
+                                                    padding: 15px;
+                                                    color: #777777;
+                                                    line-height: 45px;
+                                                    &.active {
+                                                        color: #1e69b8;
+                                                    }
+                                                }
+                                            }
+                                            .droppedItem {
+                                                position: relative;
+                                                &:hover {
+                                                    .droppedMenu {
+                                                        opacity: 1;
+                                                        transform: translateY(0);
+                                                        background-color: #f5f5f5;
+                                                    }
+                                                }
+                                                .droppedMenu {
+                                                    position: absolute;
+                                                    top: 100%;
+                                                    left: 0;
+                                                    width: 200px;
+                                                    opacity: 0;
+                                                    transition: .4s ease-in-out;
+                                                    transform: translateY(-15px);
+                                                    li {
+                                                        padding: 5px;
+                                                        border: 1px solid #dddddd;
+                                                        a {
+                                                            padding: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .slider {
+                                    background: url(../image/image_01.jpg)no-repeat center /cover;
+                                    height: 90vh;
+                                    background-attachment: fixed;
+                                    display: flex;
+                                    align-items: center;
+                                    color: #ffffff;
+                                    .slide-text {
+                                        i {
+                                            background: #1e69b8;
+                                            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                                            padding: 30px;
+                                        }
+                                        h1 {
+                                            padding: 15px 0;
+                                            font-size: 3em;
+                                        }
+                                        a {
+                                            &:hover {
+                                                background: #1E69B8;
+                                            }
+                                            text-transform: uppercase;
+                                            margin-top: 25px;
+                                        }
+                                        p {
+                                            font-size: 1.5em;
+                                        }
+                                    }
+                                }
+                                
+                                .border {
+                                    background: #f5f5f5;
+                                    padding: 40px;
+                                    align-items: center;
+                                    .border-item {
+                                        h3 {
+                                            font-size: 20px;
+                                            margin-top: 1em;
+                                        }
+                                        a {
+                                            background: #1e69b8;
+                                            padding: 15px 30px;
+                                            font-size: 16px;
+                                            margin-left: 10em;
+                                            &:hover {
+                                                color: #ffffff;
+                                                background: blue;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .question {
+                                    padding: 85px;
+                                    .question-text {
+                                        h2 {
+                                            font-weight: 100;
+                                            padding: 20px 0;
+                                            border-bottom: 3px solid #1e69b8;
+                                        }
+                                        p {
+                                            font-size: 18px;
+                                            font-weight: 300;
+                                            padding: 2em 15em;
+                                        }
+                                    }
+                                    .question-items {
+                                        .question-words {
+                                            h4 {
+                                                padding: 20px;
+                                                font-size: 18px;
+                                            }
+                                            p {
+                                                font-weight: 100;
+                                            }
+                                        }
+                                    }
+                                    .button {
+                                        a {
+                                            background: #1e69b8;
+                                            color: #dddddd;
+                                            padding: 15px 20px;
+                                            margin-top: 2em;
+                                            &:hover {
+                                                background: blue;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .image-sc {
+                                    background: #f5f5f5;
+                                    .service {
+                                        margin-left: -30px;
+                                        h2 {
+                                            text-align: center;
+                                            ;
+                                            font-weight: 300;
+                                            font-size: 33px;
+                                            letter-spacing: 3px;
+                                            padding-top: 20px;
+                                        }
+                                        p {
+                                            text-align: center;
+                                            font-size: 18px;
+                                            font-weight: 100;
+                                            padding: 15px 8em;
+                                        }
+                                        .categories {
+                                            li {
+                                                font-weight: 300;
+                                                &::before {
+                                                    content: '✔';
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .view-button {
+                                        text-align: center;
+                                        a {
+                                            margin-top: 2em;
+                                            color: #1e69b8;
+                                            transition: .3s ease;
+                                            border: 1px solid #dfdfdf;
+                                            &:hover {
+                                                color: #ffffff;
+                                                background: #1e69b8;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                .repair {
+                                    padding: 90px;
+                                    .repair-text {
+                                        h2 {
+                                            color: #333333;
+                                            font-weight: 300;
+                                        }
+                                        p {
+                                            color: #777777;
+                                            padding: 25px 13em;
+                                            font-size: 18px;
+                                            font-weight: 200;
+                                        }
+                                    }
+                                    .repair-img {
+                                        a {
+                                            background: #f5f5f5;
+                                            color: #333333;
+                                            font-size: 18px;
+                                            font-weight: 500;
+                                            width: 112%;
+                                            text-align: left;
+                                        }
+                                        img {
+                                            &:hover {
+                                                opacity: 0.8;
+                                            }
+                                            transition: .3s ease;
+                                        }
+                                    }
+                                    .repair-button {
+                                        text-align: center;
+                                        a {
+                                            background: #1e69b8;
+                                            margin-top: 45px;
+                                            font-size: 14px;
+                                            font-weight: 100;
+                                            transition: .3s ease-in;
+                                            padding: 20px 30px;
+                                            ;
+                                            &:hover {
+                                                color: #ffffff;
+                                                background: blue;
+                                            }
+                                        }
+                                    }
+                                }
